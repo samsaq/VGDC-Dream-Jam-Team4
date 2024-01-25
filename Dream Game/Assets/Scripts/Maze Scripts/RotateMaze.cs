@@ -7,12 +7,12 @@ public class RotateMaze : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) { 
-            this.transform.Rotate(0, 0, 2f);
+        if (Input.GetKeyDown(KeyCode.UpArrow)) { 
+            this.transform.Rotate(0, 0, 5f);
         }
             
-        else if (Input.GetKeyDown(KeyCode.RightArrow)) { 
-            this.transform.Rotate(0, 0, -2f);
+        else if (Input.GetKeyDown(KeyCode.DownArrow)) { 
+            this.transform.Rotate(0, 0, -5f);
         }
 
         
