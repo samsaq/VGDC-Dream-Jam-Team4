@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class CloudController : MonoBehaviour
 {
+
+    [SerializeField] AudioSource finishNoise;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Finish")
         {
+            finishNoise.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
